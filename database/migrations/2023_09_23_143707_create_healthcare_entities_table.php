@@ -24,14 +24,12 @@ return new class extends Migration
             $table->enum("sex" , ['male' , 'female' , 'both'])->default("male");
             $table->enum("blocked" , ['yes' , "no"])->default("yes");
             $table->dateTime("expired_at")->nullable();
-
             $table->longText("address")->nullable();
             $table->longText("description")->nullable();
             $table->longText("maps")->nullable();
             $table->longText('opening_hours')->nullable();
             $table->longText("opening_hours_display")->nullable();
             $table->string("average_patient_time")->nullable();
-
             $table->longText("tags")->nullable();
             $table->longText('diplomas')->nullable();
             $table->longText('experience')->nullable();
@@ -40,8 +38,6 @@ return new class extends Migration
             $table->longText('healthcares')->nullable();
             $table->longText('customers_result')->nullable();
             $table->longText('payments')->nullable();
-
-
             $table->longText('phones')->nullable();
             $table->string("slug")->nullable();
             $table->unsignedBigInteger("daira_id")->nullable();

@@ -4,7 +4,7 @@
 <div class="login-box">
     <div class="login-logo">
         <x-auth-session-status class="mb-4" :status="session('status')" />
-        <a href="{{ route('front.home') }}">{{ env('APP_NAME') }}</a>
+        <a href="{{ route('front.') }}">{{ env('APP_NAME') }}</a>
     </div>
     <!-- /.login-logo -->
     <div class="card">
