@@ -13,7 +13,9 @@ class Article extends Model implements HasMedia
 {
     use HasFactory , InteractsWithMedia;
 
-    protected $fillable = ['title' , 'collecting_time' , 'section' , 'area' , 'medication_type' , 'payments' , 'medication' , 'healthcare_id' , 'author_id' , 'pin'  , 'pinner_id' ,  'blood' , 'location' ,'content' , 'wilaya' , 'daira' , 'language' , 'emergency' , 'status' , 'started_at'];
+    protected $fillable = ['title' , 'collecting_time' , 'section' , 'area' , 'medication_type' , 'payments' , 'medication' , 'healthcare_id' ,
+        'author_id' , 'pin'  , 'pinner_id' ,  'blood' , 'location' ,'content' , 'wilaya' , 'daira' , 'language' , 'emergency' ,
+      'status' , 'started_at'];
 
     const Section = ["blood" , "medication" , "medication_demand"];
 
