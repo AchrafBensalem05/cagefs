@@ -16,10 +16,9 @@ return new class extends Migration
     public function up()
     {
         Schema::create('dairas', function (Blueprint $table) {
-            $table->smallInteger('id')->primary();
+            $table->id();
             $table->tinyText('name');
             $table->tinyText('ar_name');
-
             $table->tinyInteger('wilaya_id');
             $table->foreign('wilaya_id')->references('id')->on('wilayas');
         });
